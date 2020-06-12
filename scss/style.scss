@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import "normalize";
+@import "layout";
+@import "elements";
+
+body {
+  background-image: linear-gradient(to top, #292d3ed2, #292d3ed2),url(../img/bg1.png);
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  font: 400 14px/1.57 "Lato", sans-serif;
+  color: #fff;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1640px;
+}
+.ba-tabs {
+  max-width: 600px;
+  background-color: #212534;
+  margin:0 auto;
+  &__content{
+	display: flex;
+	justify-content: space-between;
+	background-color: #212534;
+	padding: 58px 45px;
+}
+}
+.ba-header {
+	position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 58px;
+  list-style: none;
+  background-color: #2b3040;
+  height:117px;
+  font-size: 16px;
+  line-height: 1.75;
+  cursor:pointer;
+  &__tab {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  justify-content: center;
+	 color: #ffffff;
+	 text-align: center;
+	 text-transform: uppercase;
+	 opacity: 0.702;
+	 height: 100%;
+	 padding: 0 13px;
+	 text-decoration: none;
+  }
+}
+.active{
+	opacity: 1;
+	border-bottom: 2px solid #fff;
+}
+.ba-icons{
+	fill: #ffffff;
+}
+.favourite {
+	background-color: rgb(189, 195, 199);
+	position: absolute;
+	left: 294px;
+	top: 576px;
+	width: 20px;
+	height: 19px;
+	z-index: 36;
+ }
+.icon-star{
+	height: 20px;
+	width: 20px;
+	fill: #ffdd3f;
+	margin-left: 8px;
+}
+.empty{
+	fill: #4b536b;
+}
+.star-set{
+	margin: 24px 8px;
+}
+.ba-review{
+width: 60%;
+&__name{
+font-weight: 700;
+font-size: 32px;
+line-height: 0.6;
+margin:0;
+}
+&__date{
+margin:0;
+font: 14px;
+padding: 15px 0;
+}
+&__rate{
+border: 1px solid #999cae;
+border-radius: 50%;
+height: 68px;
+width: 68px;
+text-align: center;
+color: #999cae;
+position: relative;
+&:after{
+	content: url(../img/round.png);
+	position: absolute;
+	top: -3px;
+	left: 7px;
+}
+}
+&__num{
+	font-size: 20px;
+	position: absolute;
+	top: 17px;
+	left: 20px;
+}
+&__description{
+	color: #999cae;
+	padding-bottom: 35px;
+}
+&__button{
+	background-color: #13e28d;
+	padding: 20px 39px;
+	border-radius: 3px;
+}
+&__discount{
+color: #ffdd3f;
+margin: 5px;
+
+}
+&__price{
+	font-size: 32px;
+	margin: 0;
+line-height: 0.6;
+
+}
+}
+.row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
